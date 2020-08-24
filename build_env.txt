@@ -6,6 +6,8 @@ conda install -y jupyter
 conda install -y scipy
 conda install -y IPython
 conda install -y pyarrow
+pip install shap
+pip install dtreeplt
 pip install xlrd 
 pip install sklearn
 pip install mgrs
