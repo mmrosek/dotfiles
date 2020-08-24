@@ -26,7 +26,8 @@ jupyter notebook password
 sudo yum install nano
 
 # Config nano
-echo "set tabsize 4\nset tabstospaces" > ~/.nanorc
+echo "set tabsize 4
+set tabstospaces" > ~/.nanorc
 
 # Install pygresql
 sudo yum install postgresql-devel
