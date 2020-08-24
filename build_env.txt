@@ -22,6 +22,9 @@ jt -dfs 10 -ofs 10 -t oceans16
 jupyter notebook --generate-config
 jupyter notebook password
 
+# Install nano
+sudo yum install nano
+
 # Config nano
 echo "set tabsize 4\nset tabstospaces" > ~/.nanorc
 
