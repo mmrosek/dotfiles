@@ -1,4 +1,4 @@
-# Install core packages
+# Install core python packages
 conda install -y pandas
 conda install -y numpy
 conda install -y matplotlib
@@ -20,12 +20,11 @@ pip install jupyterthemes
 # Config night mode for jupyter notebook
 jt -dfs 10 -ofs 10 -t oceans16
 
-# Enable password to avoid copy/paste of key every connection
-jupyter notebook --generate-config
-jupyter notebook password
+# Install htop
+sudo yum install -y htop
 
 # Install nano
-sudo yum install nano
+sudo yum install -y nano=
 
 # Config nano
 echo "set tabsize 4
@@ -34,3 +33,7 @@ set tabstospaces" > ~/.nanorc
 # Install pygresql
 sudo yum install postgresql-devel
 pip install PyGreSQL==5.1.1
+
+# Enable password to avoid copy/paste of key every connection
+jupyter notebook --generate-config
+jupyter notebook password
